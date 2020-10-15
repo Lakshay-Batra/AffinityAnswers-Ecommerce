@@ -25,7 +25,7 @@ nav ul li a {
 }
 
 nav ul li:hover {
-    background-color: #a2d5f2;
+    background-color: #8dcee6;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -42,7 +42,7 @@ nav .cart-notification {
     font-size: 12px;
     border-radius: 50%;
     padding: 4px 7px;
-    background-color: #a2d5f2;
+    background-color: #8dcee6;
     top: -5px;
     left: -5px;
 }
@@ -72,6 +72,10 @@ nav ul li img {
     color: #333333;
 }
 
+.content .category-heading {
+    color: #2d87a8;
+}
+
 .content .cards-container {
     display: flex;
     flex-direction: row;
@@ -98,7 +102,7 @@ nav ul li img {
     display: inline-block;
     width: 100%;
     border: none;
-    background-color: rgb(168, 8, 8);
+    background-color: #656d72;
     color: white;
     padding: 5px 2px;
     white-space: nowrap;
@@ -204,6 +208,7 @@ nav ul li img {
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    text-align: center;
 }
 
 .cart-panel .inc-dec-div {
@@ -241,6 +246,9 @@ nav ul li img {
     cursor: pointer;
     border: 2px solid rgb(163, 17, 17);
     background-color: transparent;
+    color:#656d72;
+    outline: none;
+    border-radius: 3px;
 }
 
 .cart-panel .delete-item-btn:hover {

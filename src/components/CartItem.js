@@ -17,7 +17,7 @@ function CartItem(props) {
                 <h4>{props.item.name}</h4>
                 <div className="inc-dec-div">
                     <button onClick={handleDecrement} className="inc-dec-btn">➖</button>
-                    <span><b>Qty:</b>{props.item.quantity}</span>
+                    &ensp;<span>Quantity:{props.item.quantity}</span>&ensp;
                     <button onClick={handleIncrement} className="inc-dec-btn">➕</button>
                 </div>
             </div>
