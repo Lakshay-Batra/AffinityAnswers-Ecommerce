@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/AffinityAnswers-Ecommerce/static/css/main.9aa6ef56.chunk.css",
+    "main.js": "/AffinityAnswers-Ecommerce/static/js/main.c2ca5d88.chunk.js",
+    "main.js.map": "/AffinityAnswers-Ecommerce/static/js/main.c2ca5d88.chunk.js.map",
+    "runtime-main.js": "/AffinityAnswers-Ecommerce/static/js/runtime-main.38abfe95.js",
+    "runtime-main.js.map": "/AffinityAnswers-Ecommerce/static/js/runtime-main.38abfe95.js.map",
+    "static/js/2.89a0499a.chunk.js": "/AffinityAnswers-Ecommerce/static/js/2.89a0499a.chunk.js",
+    "static/js/2.89a0499a.chunk.js.map": "/AffinityAnswers-Ecommerce/static/js/2.89a0499a.chunk.js.map",
+    "index.html": "/AffinityAnswers-Ecommerce/index.html",
+    "precache-manifest.bb561ceb7237af7d83d98410e590e590.js": "/AffinityAnswers-Ecommerce/precache-manifest.bb561ceb7237af7d83d98410e590e590.js",
+    "service-worker.js": "/AffinityAnswers-Ecommerce/service-worker.js",
+    "static/css/main.9aa6ef56.chunk.css.map": "/AffinityAnswers-Ecommerce/static/css/main.9aa6ef56.chunk.css.map",
+    "static/js/2.89a0499a.chunk.js.LICENSE.txt": "/AffinityAnswers-Ecommerce/static/js/2.89a0499a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.38abfe95.js",
+    "static/js/2.89a0499a.chunk.js",
+    "static/css/main.9aa6ef56.chunk.css",
+    "static/js/main.c2ca5d88.chunk.js"
+  ]
+}
