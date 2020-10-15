@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* html,body {
+    height: 100%;
+} */
+
+nav {
+    padding: 20px 30px;
+    background-color: #51adcf;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 8px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: #a2d5f2;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav .cart-button {
+    position: relative;
+}
+
+nav .cart-notification {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 4px 7px;
+    background-color: #a2d5f2;
+    top: -5px;
+    left: -5px;
+}
+
+nav ul li img {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.main {
+    /* height: 100%; */
+    display: flex;
+    align-items: flex-start;
+}
+
+/******** Content Screen **********/
+
+.content {
+    flex-grow: 1;
+    padding: 20px 20px 0;
+    /* background-color: khaki; */
+}
+
+.content h2 {
+    color: #333333;
+}
+
+.content .cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-items: flex-start; */
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.content .card {
+    margin: 5px 3px 8px;
+    background-color: #fbf7f0;
+    border-radius: 3px;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.content .card h4 {
+    margin: 2px auto;
+    color: #333333;
+}
+
+.content .card button {
+    display: inline-block;
+    width: 100%;
+    border: none;
+    background-color: rgb(168, 8, 8);
+    color: white;
+    padding: 5px 2px;
+    white-space: nowrap;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.content .card button:hover {
+    box-shadow: 1px 1px 3px 1px #444444;
+}
+
+/******** Sidebar **********/
+
+.sidebar {
+    display: flex;
+    flex-grow: 0;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px 0;
+    /* background-color: #fbf7f0; */
+}
+
+.sidebar .category-button button {
+        background-color: white; /* Green */
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        margin-bottom: 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        border: 2px solid #333333;
+        white-space: nowrap;
+}
+.sidebar .category-button button:hover {
+    background-color: #fbf7f0;
+}
+
+/***************** Cart Panel *****************/
+
+.cart-panel {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    background-color: #f6f5f5;
+    right: 10px;
+    border: 1px solid #333333;
+    box-shadow: 2px 2px 10px 2px grey;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.cart-panel .close-cart {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    cursor: pointer;
+}
+
+/* .cart-panel .up-arrow {
+    position: relative;
+    left: 240px;
+    top: -10px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #f6f5f5;
+} */
+
+.cart-panel h2 {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.cart-panel hr {
+    margin: 0 5px;
+}
+
+.cart-panel .cart-items-container {
+    padding: 5px;
+}
+
+.cart-item-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 2px 5px;
+    margin-bottom: 1px;
+    border: 1px solid #555555;
+    background-color: #fbf7f0;
+}
+
+.cart-item-card img {
+    margin: 0;
+    border-radius: 3px;
+}
+
+.cart-panel .cart-item-details {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.cart-panel .inc-dec-div {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.cart-panel .inc-dec-btn {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.cart-panel .inc-dec-btn:hover {
+    background-color:  #f5ede1;
+}
+
+.cart-panel .delete-item-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-panel .delete-item-btn {
+    display: inline-block;
+    cursor: pointer;
+    /* font-size: large; */
+    /* font-weight: bold; */
+    padding: 3px 4px;
+    cursor: pointer;
+    border: 2px solid rgb(163, 17, 17);
+    background-color: transparent;
+}
+
+.cart-panel .delete-item-btn:hover {
+    box-shadow: 1px 1px 3px 1px #444444;
+}
