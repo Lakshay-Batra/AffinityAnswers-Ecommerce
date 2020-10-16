@@ -6,7 +6,7 @@ function Sidebar(props) {
     return (
         <div className="sidebar">
             {categories.map(category => {
-                return <CategoryButton key={category.key} name={category.name} onCategorySelect={props.onCategorySelect}  />
+                return <CategoryButton active={(props.activeCategory == category.name) ? true : false} key={category.key} name={category.name} onCategorySelect={props.onCategorySelect} />
             })}
         </div>
     )

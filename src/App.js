@@ -149,7 +149,7 @@ function App() {
         closeCart={() => {setShowCart(false);}}
       />}
       <div className="main">
-        <Sidebar onCategorySelect={onCategorySelect} />
+        <Sidebar activeCategory={categorySelected.name} onCategorySelect={onCategorySelect} />
         <Content itemAdded={itemAdded} category={categorySelected.default} categoryName={categorySelected.name} />
       </div>
     </div>
