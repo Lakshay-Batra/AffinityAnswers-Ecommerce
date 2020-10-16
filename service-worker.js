@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/AffinityAnswers-Ecommerce/precache-manifest.bb561ceb7237af7d83d98410e590e590.js"
+  "/AffinityAnswers-Ecommerce/precache-manifest.c8d9646d07b767a713766506bf85e106.js"
 );
 
 self.addEventListener('message', (event) => {

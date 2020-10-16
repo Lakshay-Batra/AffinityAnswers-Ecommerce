@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e84e41a8178c323b7b1b6abb6d6e3d2c",
+    "revision": "d36b805424e706c066d54d611ced85d5",
     "url": "/AffinityAnswers-Ecommerce/index.html"
   },
   {
-    "revision": "e97a8268762897f926bb",
+    "revision": "6743aaaf5a07c6045c92",
     "url": "/AffinityAnswers-Ecommerce/static/css/main.9aa6ef56.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/AffinityAnswers-Ecommerce/static/js/2.89a0499a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e97a8268762897f926bb",
-    "url": "/AffinityAnswers-Ecommerce/static/js/main.c2ca5d88.chunk.js"
+    "revision": "6743aaaf5a07c6045c92",
+    "url": "/AffinityAnswers-Ecommerce/static/js/main.5e37bd39.chunk.js"
   },
   {
     "revision": "46b510d4c0dc8965536f",
