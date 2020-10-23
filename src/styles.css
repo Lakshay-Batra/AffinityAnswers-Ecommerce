@@ -41,8 +41,11 @@ nav .cart-notification {
     align-items: center;
     font-size: 12px;
     border-radius: 50%;
-    padding: 4px 7px;
-    background-color: #8dcee6;
+    width: 20px;
+    height: 20px;
+    /* padding: 4px 7px; */
+    background-color: red;
+    color: white;
     top: -5px;
     left: -5px;
 }
@@ -81,7 +84,7 @@ nav ul li img {
     flex-direction: row;
     flex-wrap: wrap;
     /* align-items: flex-start; */
-    justify-content: center;
+    justify-content: flex-start;
     align-content: flex-start;
 }
 
@@ -163,6 +166,13 @@ nav ul li img {
     right: 2px;
     top: 2px;
     cursor: pointer;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-around;
+    padding: auto 2px;
+    text-align: center;
 }
 
 /* .cart-panel .up-arrow {

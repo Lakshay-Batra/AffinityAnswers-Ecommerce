@@ -14,6 +14,7 @@ function App() {
   const [category1, setCategory1] = useState(Category1);
   const [category2, setCategory2] = useState(Category2);
   const [category3, setCategory3] = useState(Category3);
+  const [cartPrice, setCartPrice] = useState(0);
 
   // state to render category data on content screen according to the category selected by sidebar
   const [categorySelected, setCategorySelected] = useState(category1);
@@ -84,6 +85,8 @@ function App() {
 
   // function when an item is added from content cards
   function itemAdded(item) {
+    
+
     var itemAdded = false;
     var newCart;
     for (var i = 0; i < cartItems.length; i++) {
@@ -91,6 +94,11 @@ function App() {
         newCart = [...cartItems];
         newCart[i].quantity++;
         itemAdded = true;
+
+        setCartPrice(prevValue => {
+          return prevValue+item.price;
+        });
+
         break;
       }
     }
@@ -105,13 +113,30 @@ function App() {
       });
       /* mark the item as inCart: true inside that particular category */
       markStatusInCart(item, true);
+
+      setCartPrice(prevValue => {
+        return prevValue+item.price;
+      });
     }
+
+    // var cartCost = cartPrice;
+    // // changing cartPrice
+    // for (var i = 0; i < cartItems.length; i++) {
+      
+    //   cartCost += cartItems[i].price;
+    //   console.log(cartCost);
+      
+    // }
+    // setCartPrice(cartCost);
   }
 
   // function to remove item from cart
   function removeItemFromCart(item) {
     var newCartItemsAfterDeletion = cartItems.filter(cartItem => {
       return item.key != cartItem.key;
+    });
+    setCartPrice(prevValue => {
+      return prevValue-(item.price * item.quantity);
     });
     setCartItems(newCartItemsAfterDeletion);
 
@@ -127,10 +152,16 @@ function App() {
         newCart = [...cartItems];
         if (operation === "increment") {
           newCart[i].quantity++;
+          setCartPrice(prevValue => {
+            return prevValue+item.price;
+          });
         }
         if (operation === "decrement") {
           if (newCart[i].quantity > 1) {
             newCart[i].quantity--;
+            setCartPrice(prevValue => {
+              return prevValue-item.price;
+            });
           }
         }
         break;
@@ -146,7 +177,8 @@ function App() {
         incDecItem={incDecItem}
         cartItems={cartItems}
         removeItemFromCart={removeItemFromCart}
-        closeCart={() => {setShowCart(false);}}
+        closeCart={() => { setShowCart(false); }}
+        cartPrice={cartPrice}
       />}
       <div className="main">
         <Sidebar activeCategory={categorySelected.name} onCategorySelect={onCategorySelect} />
